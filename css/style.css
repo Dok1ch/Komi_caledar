@@ -1,0 +1,298 @@
+/* Вывод изображения календаря на экран */
+.roulette-animals {
+  background-image: url(../images/calendar.png);
+  width: 367px;
+  height: 368px;
+}
+
+/* Стилизация стрелки над календарем */
+.arrow-down {
+  width: 0;
+  height: 0;
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+
+  border-top: 20px solid rgb(0, 0, 0);
+}
+
+/* Установка шрифтов заголовка h5 */
+h5 {
+  font-family: Bradley Hand, cursive;
+  text-align: justify;
+}
+
+/* Стилизация button */
+button {
+  font-size: 20px;
+  position: relative;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+
+/* Стилизация label */
+label {
+  font-size: 20px;
+  cursor: pointer;
+  font-style: initial;
+  font-family: fantasy;
+  color: black;
+}
+
+/* Выводит изображение в popup-menu по центру */
+.center-img {
+  display: block;
+  margin: 0 auto;
+}
+
+/* Общая настройка popup-menu */
+.popup__container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #fff;
+  border-radius: 10px;
+  max-width: 588px;
+  width: 90%;
+  /* Посмотрите на скролл */
+  height: 80%;
+  overflow: scroll;
+}
+
+.popup__wrapper {
+  padding: 40px;
+}
+
+/* Настройка popup-menu Squirrel */
+#showSquirrel {
+  display: none;
+  animation-duration: 1.5s;
+  animation-fill-mode: initial;
+}
+
+#showSquirrel.open {
+  display: block;
+}
+
+.popupSquirrel {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(17, 17, 17, 0.5);
+  transition: all 0.5s ease;
+  display: none;
+}
+
+.popup_openSquirrel {
+  display: block;
+}
+
+/* Настройка popup-menu Marten */
+#showMarten {
+  display: none;
+  animation-duration: 1.5s;
+  animation-fill-mode: initial;
+}
+
+#showMarten.open {
+  display: block;
+}
+
+.popupMarten {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(17, 17, 17, 0.5);
+  transition: all 0.5s ease;
+  display: none;
+}
+
+.popup_openMarten {
+  display: block;
+}
+
+/* Настройка popup-menu Bear */
+#showBear {
+  display: none;
+  animation-duration: 1.5s;
+  animation-fill-mode: initial;
+}
+
+#showBear.open {
+  display: block;
+}
+
+.popupBear {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(17, 17, 17, 0.5);
+  transition: all 0.5s ease;
+  display: none;
+}
+
+.popup_openBear {
+  display: block;
+}
+
+/* Настройка popup-menu Deer */
+#showDeer {
+  display: none;
+  animation-duration: 1.5s;
+  animation-fill-mode: initial;
+}
+
+#showDeer.open {
+  display: block;
+}
+
+.popupDeer {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(17, 17, 17, 0.5);
+  transition: all 0.5s ease;
+  display: none;
+}
+
+.popup_openDeer {
+  display: block;
+}
+
+/* Настройка popup-menu Otter */
+#showOtter {
+  display: none;
+  animation-duration: 1.5s;
+  animation-fill-mode: initial;
+}
+
+#showOtter.open {
+  display: block;
+}
+
+.popupOtter {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(17, 17, 17, 0.5);
+  transition: all 0.5s ease;
+  display: none;
+}
+
+.popup_openOtter {
+  display: block;
+}
+
+/* Настройка popup-menu Fox */
+#showFox {
+  display: none;
+  animation-duration: 1.5s;
+  animation-fill-mode: initial;
+}
+
+#showFox.open {
+  display: block;
+}
+
+.popupFox {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(17, 17, 17, 0.5);
+  transition: all 0.5s ease;
+  display: none;
+}
+
+.popup_openFox {
+  display: block;
+}
+
+/* Настройка popup-menu Wolverine */
+#showWolverine {
+  display: none;
+  animation-duration: 1.5s;
+  animation-fill-mode: initial;
+}
+
+#showWolverine.open {
+  display: block;
+}
+
+.popupWolverine {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(17, 17, 17, 0.5);
+  transition: all 0.5s ease;
+  display: none;
+}
+
+.popup_openWolverine {
+  display: block;
+}
+
+/* Настройка popup-menu Ermine */
+#showErmine {
+  display: none;
+  animation-duration: 1.5s;
+  animation-fill-mode: initial;
+}
+
+#showErmine.open {
+  display: block;
+}
+
+.popupErmine {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(17, 17, 17, 0.5);
+  transition: all 0.5s ease;
+  display: none;
+}
+
+.popup_openErmine {
+  display: block;
+}
+
+/* Настройка popup-menu Elk */
+#showElk {
+  display: none;
+  animation-duration: 1.5s;
+  animation-fill-mode: initial;
+}
+
+#showElk.open {
+  display: block;
+}
+
+.popupElk {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(17, 17, 17, 0.5);
+  transition: all 0.5s ease;
+  display: none;
+}
+
+.popup_openElk {
+  display: block;
+}
